@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   background-image: linear-gradient(to top, #050b46 100%, #7b8fef 200%);
   display: flex;
   justify-content: center;
@@ -18,7 +18,7 @@ button {
 }
 
 .container {
-  margin: 40px;
+  margin: 5px;
   width: 600px;
   height: 600px;
   padding: 10px 25px;
