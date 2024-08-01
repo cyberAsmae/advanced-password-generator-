@@ -287,3 +287,45 @@ a:hover {
     transform: rotate(10deg);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+  }
+  .options {
+    margin: 20px 0;
+  }
+  .settings {
+    flex-direction: column;
+  }
+  .settings .setting {
+    margin-bottom: 10px;
+  }
+  h2{
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+    height: auto;
+    margin: 10px 0;
+  }
+  .options {
+    margin: 10px 0;
+  }
+  .settings {
+    flex-direction: column;
+  }
+  .settings .setting {
+    margin-bottom: 5px;
+  }
+  .btn.generate {
+    height: 40px;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+}
