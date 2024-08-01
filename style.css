@@ -5,7 +5,6 @@
 }
 
 body {
-  width:100%;
   background-image: linear-gradient(to top, #050b46 100%, #7b8fef 200%);
   display: flex;
   justify-content: center;
