@@ -18,7 +18,7 @@ button {
 }
 
 .container {
-  margin: 40px 0;
+  margin: 40px;
   width: 600px;
   height: 600px;
   padding: 10px 25px;
@@ -28,7 +28,7 @@ button {
   font-family: "Montserrat";
 }
 .container h2.title {
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   margin: 10px -5px;
   margin-bottom: 30px;
   color: #fff;
