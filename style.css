@@ -312,6 +312,7 @@ a:hover {
 
 @media only screen and (max-width: 480px) {
    body{
+    max-width: 305px;
     font-size: 1.2rem;
     overflow-x: hidden;
     padding: 0;
