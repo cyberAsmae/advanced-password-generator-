@@ -21,8 +21,9 @@ button {
 
 .container {
   margin: 40px 0;
-  width: 400px;
-  height: 600px;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
   padding: 10px 25px;
   background: #0a0e31;
   border-radius: 10px;
@@ -180,7 +181,7 @@ button {
 .settings {
   position: relative;
   height: auto;
-  widows: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -266,7 +267,6 @@ button {
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.08);
 }
 
-
 a {
   margin: 0 20px;
   color: #fff;
@@ -284,60 +284,44 @@ a:hover {
   }
   20%, 60% {
     transform: rotate(-20deg);
-  }
   40%, 80% {
     transform: rotate(10deg);
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .container {
     width: 90%;
-    height: auto;
-    margin: 20px 0;
-  }
-  .options {
-    margin: 20px 0;
-  }
-  .settings {
-    flex-direction: column;
-  }
-  .settings .setting {
-    margin-bottom: 10px;
-  }
-  h2{
-    font-size: 2rem;
+    max-width: 350px;
   }
 }
 
-@media only screen and (max-width: 480px) {
-   body{
-    padding:0;
-    max-width: 400px;
-    font-size: 1.2rem;
-    overflow-x: hidden;
-    padding: 0;
-    margin: 0;
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    max-width: 300px;
   }
   
-  .container {
-    width: 95%;
-    height: auto;
-    margin: 10px 0;
-  }
-  .options {
-    margin: 10px 0;
-  }
-  .settings {
-    flex-direction: column;
-  }
-  .settings .setting {
-    margin-bottom: 5px;
-  }
-  .btn.generate {
-    height: 40px;
-  }
-  h2{
+  .container h2.title {
     font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .result__info {
+    font-size: 0.7rem;
+  }
+
+  .range__slider::before, .range__slider::after {
+    font-size: 0.8rem;
+  }
+
+  .settings .setting {
+    padding: 10px 15px;
+  }
+
+  .btn.generate {
+    height: 45px;
+    font-size: 0.9rem;
   }
 }
+
